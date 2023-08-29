@@ -2,6 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/c-code-testing/test-convert/.vs
+**.vs
 /3-party
-/c-code-testing/test-convert/out/build
+**/out/**
