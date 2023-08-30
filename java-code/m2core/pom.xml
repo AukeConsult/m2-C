@@ -1,56 +1,49 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<parent>
+		<artifactId>m2</artifactId>
+		<groupId>auke.consult</groupId>
+		<version>3.0</version>
+	</parent>
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>auke.consult</groupId>
 	<artifactId>m2core</artifactId>
 	<packaging>jar</packaging>
 	<version>3.0</version>
 	<name>m2core</name>
-	<url>http://test</url>
 
-	<properties>
-  	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.6</java.version>
-		<slf4j.version>1.7.5</slf4j.version>
-		<logback.version>1.1.2</logback.version>
-		<junit.version>4.10</junit.version>
-        <powermock.version>1.6.2</powermock.version>
-        <mockito.version>1.10.19</mockito.version>
-	</properties>
-	
     <dependencies>
-	    
-		
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>${slf4j.version}</version>
 		</dependency>
-				  
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>${mockito.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-module-junit4</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-api-mockito</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
-        </dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>${mockito.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-mockito</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
 	
 	</dependencies>
 
@@ -74,6 +67,7 @@
 			</build>
 
 		</profile>
+
 		<profile>
 			<id>normal</id>
 			<activation>
@@ -92,10 +86,9 @@
 						</configuration>
 					</plugin>
 				</plugins>
-
 			</build>
-
 		</profile>
+
 	</profiles>
 
 	<build>
@@ -163,37 +156,5 @@
 
 		</plugins>
 	</build>
-	<repositories>
-		<!--  
-		<repository>
-			<id>auke</id>
-			<name>auke Repository for Maven</name>
-			<url>https://89.221.242.153/nexus/content/repositories/auke/</url>
-		</repository>
-		-->
-		<repository>
-			<id>maven2-repository.dev.java.net</id>
-			<name>Java.net Repository for Maven</name>
-			<url>http://download.java.net/maven/2/</url>
-			<layout>default</layout>
-		</repository>
-		<repository>
-			<id>repo2_maven_org</id>
-			<url>http://repo2.maven.org/maven2</url>
-		</repository>
-	</repositories>
-	
-	<distributionManagement>
-		<!--  
-		<repository>
-			<id>auke</id>
-			<url>https://89.221.242.153/nexus/content/repositories/auke/</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<url>https://89.221.242.153/nexus/content/repositories/auke/</url>
-		</snapshotRepository>
-		-->
-	</distributionManagement>
-		
+
 </project>

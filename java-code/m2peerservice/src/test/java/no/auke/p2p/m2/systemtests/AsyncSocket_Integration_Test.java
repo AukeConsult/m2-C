@@ -29,18 +29,13 @@ public class AsyncSocket_Integration_Test {
 			super(retur);
 		}		
 		@Override
-		public void commit() {
-			
-		}
+		public void commit() {}
 
 		@Override
-		public void rollback() {
-			
-		}
+		public void rollback() {}
+
 	}
-	
-	
-	
+
 	ITransacationSession sessionA;
 	ITransacationSession sessionB;
 	

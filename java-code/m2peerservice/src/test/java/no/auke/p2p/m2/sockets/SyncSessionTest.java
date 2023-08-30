@@ -4,7 +4,6 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import org.powermock.api.mockito.PowerMockito;
 import org.powermock.api.support.membermodification.MemberModifier;
 
 
@@ -215,8 +214,5 @@ public class SyncSessionTest extends TestCase {
 		SocketRetStatus ret = session.get("test", new byte[10]);
 		assertEquals(ReturMessageTypes.send_timeout, ret.getLastRetcode());
 	}
-	
-	
-	
-	
+
 }

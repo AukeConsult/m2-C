@@ -1,25 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>auke.consult</groupId>
+
+    <parent>
+        <artifactId>m2</artifactId>
+        <groupId>auke.consult</groupId>
+        <version>3.0</version>
+    </parent>
+
+    <groupId>auke.consult</groupId>
 	<artifactId>m2license</artifactId>
 	<version>3.0</version>
+
 	<name>m2license</name>
-	<url>http://wiki.auke.no</url>
-	
-    <properties>
-	    <project.generatedSourcesDirectoy>${project.build.directory}/generated-sources/annotations</project.generatedSourcesDirectoy>
-  	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.6</java.version>
-		<slf4j.version>1.7.5</slf4j.version>
-		<logback.version>1.1.2</logback.version>
-		<junit.version>4.10</junit.version>
-        <powermock.version>1.6.2</powermock.version>
-        <mockito.version>1.10.19</mockito.version>
-    </properties>
-	
+
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>auke.consult</groupId>
 			<artifactId>m2core</artifactId>
@@ -183,30 +179,7 @@
         </plugin>
             
     </plugins>
-  </build>
-  
 
-	
-	<repositories>
-		
-		<!--  
-		<repository>
-			<id>auke</id>
-			<name>auke Repository for Maven</name>
-			<url>https://89.221.242.153/nexus/content/repositories/auke/</url>
-		</repository>
-		-->
-		
-		<repository>
-			<id>maven2-repository.dev.java.net</id>
-			<name>Java.net Repository for Maven</name>
-			<url>http://download.java.net/maven/2/</url>
-			<layout>default</layout>
-		</repository>
-		<repository>
-			<id>repo2_maven_org</id>
-			<url>http://repo2.maven.org/maven2</url>
-		</repository>
-	</repositories>
+   </build>
 
 </project>

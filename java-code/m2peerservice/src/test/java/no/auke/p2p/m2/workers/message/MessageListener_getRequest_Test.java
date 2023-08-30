@@ -2,8 +2,6 @@ package no.auke.p2p.m2.workers.message;
 
 import static org.mockito.Mockito.*;
 
-import javax.xml.ws.Response;
-
 //import org.junit.Ignore;
 
 import no.auke.p2p.m2.message.attribute.ErrorCode;
