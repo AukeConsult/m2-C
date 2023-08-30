@@ -5,3 +5,5 @@
 **.vs
 /3-party
 **/out/**
+/java-code/m2core/.idea
+/java-code/m2license/.idea
