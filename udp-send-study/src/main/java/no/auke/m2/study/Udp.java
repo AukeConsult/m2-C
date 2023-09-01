@@ -12,10 +12,11 @@ public class Udp {
     }
 
     public long timeStamp;
-    public int msgId;
+    public long msgId;
     public Msgtype type = Msgtype.empty;
     public Chunk chunk;
-    public Udp(int msgId, Chunk chunk) {
+
+    public Udp(long msgId, Chunk chunk) {
         this.timeStamp=System.currentTimeMillis();
         this.msgId=msgId;
         this.chunk=chunk;
