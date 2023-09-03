@@ -1,0 +1,15 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+plugins {
+    id "java-library"
+    id "base"
+}
+
+repositories {
+    mavenCentral()
+}
+apply plugin: "idea"
+
